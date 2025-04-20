@@ -4,6 +4,8 @@ A modern, responsive stopwatch with lap functionality and dark/light mode toggle
 
 ![Stopwatch Screenshot](![image](https://github.com/user-attachments/assets/2e6d9fbf-a365-49f1-a51d-af9d14aa2edd)
 ) <!-- Add your screenshot file -->
+![image](https://github.com/user-attachments/assets/a2bb27d5-7b5b-47eb-bac1-eec34b47aa9e)
+
 
 ## Features
 
