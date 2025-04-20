@@ -1,1 +1,68 @@
-<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Stopwatch</title><link rel="icon" type="image/x-icon" href="/csb-fn63nl/android-chrome-192x192.72809a1e.png"><link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/68ec89a036.js" crossorigin></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin><link rel="stylesheet" href="/csb-fn63nl/styles.7d24334c.css"></head><body> <div class="area"> <ul class="circles"> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <li></li> <div class="container"> <div class="timer-display">00:00:00:000</div> <div class="buttons"> <button id="start-timer"> <i class="fa-play fa-solid"> </i> Start </button> <button id="pause-timer"> <i class="fa-pause fa-solid"> </i> Pause </button> <button id="reset-timer"> <i class="fa-rotate-left fa-solid"> </i> Reset </button> </div> </div> </ul> </div>  <script src="/csb-fn63nl/src.18bda5c2.js"></script> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Stopwatch</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="android-chrome-192x192.png">
+  <!-- Font and symbols-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/68ec89a036.js" crossorigin="anonymous"></script>
+  <!-- css file -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="particles-container">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="container">
+    <div class="stopwatch-header">
+      <h1>Neon Stopwatch</h1>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <label class="switch">
+          <input type="checkbox" id="theme-switch">
+          <span class="slider round"></span>
+        </label>
+        <i class="fas fa-sun"></i>
+      </div>
+    </div>
+    
+    <div class="timer-display">
+      <span id="hours">00</span>
+      <span class="separator">:</span>
+      <span id="minutes">00</span>
+      <span class="separator">:</span>
+      <span id="seconds">00</span>
+      <span class="separator">:</span>
+      <span id="milliseconds">000</span>
+    </div>
+    
+    <div class="buttons">
+      <button id="start-timer" class="btn btn-start">
+        <i class="fas fa-play"></i> Start
+      </button>
+      <button id="pause-timer" class="btn btn-pause">
+        <i class="fas fa-pause"></i> Pause
+      </button>
+      <button id="reset-timer" class="btn btn-reset">
+        <i class="fas fa-redo"></i> Reset
+      </button>
+    </div>
+    
+    <div class="lap-container">
+      <button id="lap-timer" class="btn btn-lap">
+        <i class="fas fa-flag"></i> Lap
+      </button>
+      <div class="lap-times" id="lap-times"></div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
